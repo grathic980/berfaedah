@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../asset/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid-19 Apps</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=lato&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/autonumeric/4.1.0/autoNumeric.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav-bar></nav-bar>
+    </header>
+    <main>
+        <jumbotron-item></jumbotron-item>
+        <global-data></global-data>
+        <covid-item></covid-item>
+        <gejalacovid-item></gejalacovid-item>
+        <indo-data></indo-data>
+        <provinsi-data></provinsi-data>
+    </main>
+    <footer>
+        <footer-item></footer-item>
+    </footer>
+    <script>
+        const myOptions = {
+            digitGroupSeparator: '.',
+            decimalCharacter: ',',
+            maximumValue: '999999999999999',
+            minimumValue: '0',
+            currencySymbol: 'Rp. '
+        };
+
+        $('#globalinfection').autoNumeric('init', myOptions);
+    </script>
+</body>
+
+</html>
